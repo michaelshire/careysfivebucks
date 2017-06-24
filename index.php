@@ -4,7 +4,6 @@
  </head>
  <body>
  <?php 
- <?= CallAPI(GET, 'https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=CAD'); ?>
  
  // Method: POST, PUT, GET etc
  // Data: array("param" => "value") ==> index.php?param=value
@@ -44,6 +43,7 @@
  } 
  
  ?> 
- Tracking the value of $5 CAD purchased on June 13, 2017
+ <?= CallAPI(GET, 'https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=CAD'); ?>
+  Tracking the value of $5 CAD purchased on June 13, 2017
  </body>
  </html>

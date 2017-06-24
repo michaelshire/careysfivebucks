@@ -4,8 +4,7 @@
  </head>
  <body>
  <?php 
- echo '<p>Hello World</p>'; 
- CallAPI(GET, 'https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=CAD');
+ <?= CallAPI(GET, 'https://api.coinmarketcap.com/v1/ticker/bitcoin/?convert=CAD'); ?>
  
  // Method: POST, PUT, GET etc
  // Data: array("param" => "value") ==> index.php?param=value
